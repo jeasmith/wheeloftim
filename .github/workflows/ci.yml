@@ -45,6 +45,7 @@ jobs:
           slug: jeasmith/wheeloftim
       
       - name: Run Lighthouse
+        working-directory: apps/web/
         run: |
           bun install -g @lhci/cli@0.13.x
           lhci autorun
