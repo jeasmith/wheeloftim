@@ -48,7 +48,6 @@ jobs:
         working-directory: apps/web/
         run: |
           bun install -g @lhci/cli@0.13.x
-          bunx next export
           lhci autorun
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
