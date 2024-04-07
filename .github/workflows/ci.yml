@@ -43,3 +43,8 @@ jobs:
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           slug: jeasmith/wheeloftim
+      
+      - name: Run Lighthouse
+        run: |
+          bun install -g @lhci/cli@0.13.x
+          lhci autorun
