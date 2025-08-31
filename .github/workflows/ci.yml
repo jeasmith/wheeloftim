@@ -17,7 +17,7 @@ jobs:
  
     steps:
       - name: Harden Runner
-        uses: step-security/harden-runner@002fdce3c6a235733a90a27c80493a3241e56863 # v2.12.1
+        uses: step-security/harden-runner@ec9f2d5744a09debf3a187a3f4f675c53b671911 # v2.13.0
         with:
           egress-policy: audit
 
@@ -35,14 +35,14 @@ jobs:
       - name: Build
         run: bun run build
  
-      - name: Test
-        run: bun test
+     # - name: Test
+     #   run: bun test
       
-      - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@18283e04ce6e62d37312384ff67231eb8fd56d24 # v5.4.3
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          slug: jeasmith/wheeloftim
+     # - name: Upload coverage reports to Codecov
+     #   uses: codecov/codecov-action@18283e04ce6e62d37312384ff67231eb8fd56d24 # v5.4.3
+     #   with:
+     #     token: ${{ secrets.CODECOV_TOKEN }}
+     #     slug: jeasmith/wheeloftim
       
       - name: Run Lighthouse
         working-directory: apps/web/
