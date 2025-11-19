@@ -1,0 +1,41 @@
+name: Security Scan
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  schedule:
+    - cron: '0 0 * * 0'
+
+jobs:
+  security:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      security-events: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run npm audit
+        run: |
+          if command -v bun &> /dev/null; then
+            bun install
+            bun audit
+          else
+            npm install
+            npm audit --audit-level=moderate
+          fi
+        continue-on-error: true
+
+      - name: Check for known vulnerabilities
+        run: |
+          if command -v bun &> /dev/null; then
+            bun pm ls --all | grep -i "vulnerable" || true
+          else
+            npm ls --all | grep -i "vulnerable" || true
+          fi
+        continue-on-error: true
+
