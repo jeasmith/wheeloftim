@@ -19,4 +19,3 @@ This project uses:
 - GitHub Advanced Security (GHAS) with CodeQL scanning
 - Automated dependency updates via Dependabot
 - Regular security audits
-
