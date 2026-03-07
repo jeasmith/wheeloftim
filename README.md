@@ -1,47 +1,20 @@
 # Wheel of Tim
 
-A name spinner application that randomly selects participants from a list.
+A spin-the-wheel style name picker with Tim-specific features.
 
-## Tech Stack
+## Overview
 
-- **Runtime:** Bun
-- **Monorepo:** Turborepo
-- **Framework:** Next.js 16 (App Router) with Turbopack
-- **UI:** shadcn/ui + Tailwind CSS
-- **Language:** TypeScript
-- **Testing:** Vitest + React Testing Library
-- **Deployment:** Vercel
+Spin Tim to pick a name, will it be Tim?
+
+## Features
+
+- **Spin the wheel** — Add names and spin to pick randomly
+- **Tim-specific features** — Custom functionality designed with Tim in mind (details coming soon)
 
 ## Getting Started
 
-Install dependencies:
+*Setup instructions will be added as the project develops.*
 
-```bash
-bun install
-```
+## License
 
-Run the development server:
-
-```bash
-bun dev
-```
-
-Build all apps and packages:
-
-```bash
-bun build
-```
-
-Run tests:
-
-```bash
-bun test
-```
-
-## Project Structure
-
-- `apps/web/` - Main Next.js application
-- `packages/ui/` - Shared UI components (shadcn/ui)
-- `packages/eslint-config/` - Shared ESLint configuration
-- `packages/typescript-config/` - Shared TypeScript configurations
-
+MIT License — see [LICENSE](LICENSE) for details.
