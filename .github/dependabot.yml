@@ -8,6 +8,10 @@ updates:
       github-actions-dependencies:
         patterns:
           - "*"
+      github-actions-security-updates:
+        applies-to: "security-updates"
+        patterns:
+          - "*"
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
