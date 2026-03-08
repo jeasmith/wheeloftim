@@ -1,5 +1,6 @@
 import { describe, expect, it, vi } from "vitest";
 import {
+  SEGMENT_COLORS,
   addName,
   buildWheelSegments,
   createRotationForWinner,
@@ -62,6 +63,31 @@ describe("wheel logic", () => {
     expect(segments).toHaveLength(3);
     expect(segments[0]).toMatchObject({ startAngle: 0, endAngle: 120 });
     expect(segments[1]).toMatchObject({ startAngle: 120, endAngle: 240 });
+  });
+
+  it("returns no segments for an empty name list", () => {
+    expect(buildWheelSegments([])).toEqual([]);
+  });
+
+  it("covers the full wheel for a single name", () => {
+    const segments = buildWheelSegments([{ id: "1", label: "Tim" }]);
+
+    expect(segments).toHaveLength(1);
+    expect(segments[0]).toMatchObject({ startAngle: 0, endAngle: 360 });
+  });
+
+  it("cycles segment colors when names exceed the palette length", () => {
+    const names: NameEntry[] = Array.from({ length: SEGMENT_COLORS.length + 2 }, (_, index) => ({
+      id: String(index + 1),
+      label: `Name ${index + 1}`,
+    }));
+
+    const segments = buildWheelSegments(names);
+
+    expect(segments).toHaveLength(names.length);
+    for (const [index, segment] of segments.entries()) {
+      expect(segment.color).toBe(SEGMENT_COLORS[index % SEGMENT_COLORS.length]);
+    }
   });
 
   it("chooses a valid winner index", () => {

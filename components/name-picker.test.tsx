@@ -1,7 +1,7 @@
 import { act, cleanup, fireEvent, render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-import { NamePicker } from "@/components/name-picker";
+import { NamePicker, SPIN_DURATION_MS } from "@/components/name-picker";
 
 describe("NamePicker", () => {
   beforeEach(() => {
@@ -53,7 +53,7 @@ describe("NamePicker", () => {
     expect(screen.getByRole("button", { name: "Spinning..." })).toBeDisabled();
 
     act(() => {
-      vi.advanceTimersByTime(4200);
+      vi.advanceTimersByTime(SPIN_DURATION_MS);
     });
 
     expect(screen.getByTestId("winner-name")).toHaveTextContent("Tim");

@@ -14,7 +14,7 @@ import {
   type SpinState,
 } from "@/lib/name-picker";
 
-const SPIN_DURATION_MS = 4200;
+export const SPIN_DURATION_MS = 4200;
 
 export function NamePicker() {
   const [names, setNames] = useState<NameEntry[]>([]);

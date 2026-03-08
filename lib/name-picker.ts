@@ -18,7 +18,7 @@ type NameResult =
   | { ok: true; names: NameEntry[] }
   | { ok: false; error: string };
 
-const SEGMENT_COLORS = [
+export const SEGMENT_COLORS = [
   "#f97316",
   "#facc15",
   "#fb7185",
@@ -75,12 +75,12 @@ export function replaceName(existingNames: NameEntry[], id: string, rawLabel: st
   };
 }
 
-export function removeName(existingNames: NameEntry[], id: string) {
+export function removeName(existingNames: NameEntry[], id: string): NameEntry[] {
   return existingNames.filter((entry) => entry.id !== id);
 }
 
-export function clearNames() {
-  return [] as NameEntry[];
+export function clearNames(): NameEntry[] {
+  return [];
 }
 
 export function selectWinnerIndex(totalNames: number) {
