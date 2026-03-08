@@ -1,19 +1,39 @@
 # Wheel of Tim
 
-A spin-the-wheel style name picker with Tim-specific features.
+Wheel of Tim is a spin-the-wheel app for picking a random name.
 
-## Overview
+## MVP Features
 
-Spin Tim to pick a name, will it be Tim?
+- Add names through the UI
+- Edit or remove existing names
+- Keep your list between visits
+- Spin an animated wheel to choose a winner at random
+- Use the app on desktop or mobile
 
-## Features
+## Local Development
 
-- **Spin the wheel** — Add names and spin to pick randomly
-- **Tim-specific features** — Custom functionality designed with Tim in mind (details coming soon)
+1. Enable Corepack if needed with `corepack enable`
+2. Install dependencies with `pnpm install`
+3. Start the app with `pnpm dev`
+4. Open `http://localhost:3000`
 
-## Getting Started
+## Testing
 
-*Setup instructions will be added as the project develops.*
+- Run unit and component tests with `pnpm test`
+- Create a production build with `pnpm build`
+
+## Deploying to Vercel
+
+1. Push the repository to GitHub
+2. Import the project into Vercel
+3. Use the default Next.js build settings
+
+No environment variables or backend services are required for the MVP.
+
+## Package Manager
+
+This repository is pinned to `pnpm` via the `packageManager` field in `package.json`.
+Package installation is guarded by a `preinstall` check, so use `pnpm` for dependency changes going forward.
 
 ## License
 
