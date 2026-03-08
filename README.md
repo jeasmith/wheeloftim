@@ -12,14 +12,15 @@ Wheel of Tim is a Vercel-ready Next.js MVP for picking a random name from a spin
 
 ## Local Development
 
-1. Install dependencies with `npm install`
-2. Start the app with `npm run dev`
+1. Enable Corepack if needed with `corepack enable`
+2. Install dependencies with `pnpm install`
+3. Start the app with `pnpm dev`
 3. Open `http://localhost:3000`
 
 ## Testing
 
-- Run unit and component tests with `npm test`
-- Create a production build with `npm run build`
+- Run unit and component tests with `pnpm test`
+- Create a production build with `pnpm build`
 
 ## Deploying to Vercel
 
@@ -28,6 +29,11 @@ Wheel of Tim is a Vercel-ready Next.js MVP for picking a random name from a spin
 3. Use the default Next.js build settings
 
 No environment variables or backend services are required for the MVP.
+
+## Package Manager
+
+This repository is pinned to `pnpm` via the `packageManager` field in `package.json`.
+Package installation is guarded by a `preinstall` check, so use `pnpm` for dependency changes going forward.
 
 ## License
 
