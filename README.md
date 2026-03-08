@@ -15,7 +15,7 @@ Wheel of Tim is a spin-the-wheel app for picking a random name.
 1. Enable Corepack if needed with `corepack enable`
 2. Install dependencies with `pnpm install`
 3. Start the app with `pnpm dev`
-3. Open `http://localhost:3000`
+4. Open `http://localhost:3000`
 
 ## Testing
 
