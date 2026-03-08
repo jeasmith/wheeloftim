@@ -65,11 +65,12 @@ describe("wheel logic", () => {
   });
 
   it("chooses a valid winner index", () => {
-    vi.spyOn(Math, "random").mockReturnValue(0.74);
-
-    expect(selectWinnerIndex(4)).toBe(2);
-
-    vi.restoreAllMocks();
+    const spy = vi.spyOn(Math, "random").mockReturnValueOnce(0.74);
+    try {
+      expect(selectWinnerIndex(4)).toBe(2);
+    } finally {
+      spy.mockRestore();
+    }
   });
 
   it("throws if there are fewer than two names", () => {
