@@ -157,11 +157,9 @@ export function NamePicker() {
   return (
     <main className="page-shell">
       <section className="hero-panel">
-        <p className="eyebrow">Vercel-ready MVP</p>
+        <p className="eyebrow">Random picker</p>
         <h1>Spin the wheel. Pick a name.</h1>
-        <p className="intro">
-          Add names, save them in your browser, then spin a bold, animated wheel to choose a winner at random.
-        </p>
+        <p className="intro">Add names, spin the wheel, and let chance choose the winner.</p>
       </section>
 
       <section className="app-grid" aria-labelledby={formId}>
@@ -248,7 +246,7 @@ export function NamePicker() {
 
           <div className="list-meta">
             <span>{names.length} names</span>
-            <span>{isHydrated ? "Saved in this browser" : "Loading saved names..."}</span>
+            <span>{isHydrated ? "Saved automatically" : "Loading names..."}</span>
           </div>
 
           {names.length ? (

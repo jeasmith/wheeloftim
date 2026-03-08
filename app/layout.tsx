@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Wheel of Tim",
-  description: "A spin-the-wheel random name picker built for Vercel.",
+  description: "A spin-the-wheel random name picker.",
 };
 
 export default function RootLayout({

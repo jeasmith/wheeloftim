@@ -1,12 +1,12 @@
 # Wheel of Tim
 
-Wheel of Tim is a Vercel-ready Next.js MVP for picking a random name from a spin wheel.
+Wheel of Tim is a spin-the-wheel app for picking a random name.
 
 ## MVP Features
 
 - Add names through the UI
 - Edit or remove existing names
-- Persist names in the current browser with `localStorage`
+- Keep your list between visits
 - Spin an animated wheel to choose a winner at random
 - Use the app on desktop or mobile
 
