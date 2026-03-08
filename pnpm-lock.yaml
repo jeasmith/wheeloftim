@@ -10,20 +10,20 @@ importers:
     dependencies:
       next:
         specifier: 16.1.6
-        version: 16.1.6(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+        version: 16.1.6(react-dom@19.2.0(react@19.2.4))(react@19.2.4)
       react:
-        specifier: 19.2.0
-        version: 19.2.0
+        specifier: 19.2.4
+        version: 19.2.4
       react-dom:
         specifier: 19.2.0
-        version: 19.2.0(react@19.2.0)
+        version: 19.2.0(react@19.2.4)
     devDependencies:
       '@testing-library/jest-dom':
         specifier: 6.9.1
         version: 6.9.1
       '@testing-library/react':
         specifier: 16.3.0
-        version: 16.3.0(@testing-library/dom@10.4.1)(@types/react-dom@19.2.2(@types/react@19.2.2))(@types/react@19.2.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+        version: 16.3.0(@testing-library/dom@10.4.1)(@types/react-dom@19.2.2(@types/react@19.2.14))(@types/react@19.2.14)(react-dom@19.2.0(react@19.2.4))(react@19.2.4)
       '@testing-library/user-event':
         specifier: 14.6.1
         version: 14.6.1(@testing-library/dom@10.4.1)
@@ -31,11 +31,11 @@ importers:
         specifier: 24.5.2
         version: 24.5.2
       '@types/react':
-        specifier: 19.2.2
-        version: 19.2.2
+        specifier: 19.2.14
+        version: 19.2.14
       '@types/react-dom':
         specifier: 19.2.2
-        version: 19.2.2(@types/react@19.2.2)
+        version: 19.2.2(@types/react@19.2.14)
       jsdom:
         specifier: 27.0.0
         version: 27.0.0
@@ -663,8 +663,8 @@ packages:
     peerDependencies:
       '@types/react': ^19.2.0
 
-  '@types/react@19.2.2':
-    resolution: {integrity: sha512-6mDvHUFSjyT2B2yeNx2nUgMxh9LtOWvkhIU3uePn2I2oyNymUAX1NIsdgviM4CH+JSrp2D2hsMvJOkxY+0wNRA==}
+  '@types/react@19.2.14':
+    resolution: {integrity: sha512-ilcTH/UniCkMdtexkoCN0bI7pMcJDvmQFPvuPvmEaYA/NSfFTAgdUSLAoVjaRJm7+6PvcM+q1zYOwS4wTYMF9w==}
 
   '@vitest/expect@3.2.4':
     resolution: {integrity: sha512-Io0yyORnB6sikFlt8QW5K7slY4OjqNX9jmJQ02QDda8lyM6B5oNgVWoSoKPac8/kgnCUzuHQKrSLtu/uOqqrig==}
@@ -950,8 +950,8 @@ packages:
   react-is@17.0.2:
     resolution: {integrity: sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==}
 
-  react@19.2.0:
-    resolution: {integrity: sha512-tmbWg6W31tQLeB5cdIBOicJDJRR2KzXsV7uSK9iNfLWQ5bIZfxuPEHp7M8wiHyHnn0DD1i7w3Zmin0FtkrwoCQ==}
+  react@19.2.4:
+    resolution: {integrity: sha512-9nfp2hYpCwOjAN+8TZFGhtWEwgvWHXqESH8qT89AT/lWklpLON22Lc8pEtnpsZz7VmawabSU0gCjnj8aC0euHQ==}
     engines: {node: '>=0.10.0'}
 
   redent@3.0.0:
@@ -1556,15 +1556,15 @@ snapshots:
       picocolors: 1.1.1
       redent: 3.0.0
 
-  '@testing-library/react@16.3.0(@testing-library/dom@10.4.1)(@types/react-dom@19.2.2(@types/react@19.2.2))(@types/react@19.2.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@testing-library/react@16.3.0(@testing-library/dom@10.4.1)(@types/react-dom@19.2.2(@types/react@19.2.14))(@types/react@19.2.14)(react-dom@19.2.0(react@19.2.4))(react@19.2.4)':
     dependencies:
       '@babel/runtime': 7.28.6
       '@testing-library/dom': 10.4.1
-      react: 19.2.0
-      react-dom: 19.2.0(react@19.2.0)
+      react: 19.2.4
+      react-dom: 19.2.0(react@19.2.4)
     optionalDependencies:
-      '@types/react': 19.2.2
-      '@types/react-dom': 19.2.2(@types/react@19.2.2)
+      '@types/react': 19.2.14
+      '@types/react-dom': 19.2.2(@types/react@19.2.14)
 
   '@testing-library/user-event@14.6.1(@testing-library/dom@10.4.1)':
     dependencies:
@@ -1585,11 +1585,11 @@ snapshots:
     dependencies:
       undici-types: 7.12.0
 
-  '@types/react-dom@19.2.2(@types/react@19.2.2)':
+  '@types/react-dom@19.2.2(@types/react@19.2.14)':
     dependencies:
-      '@types/react': 19.2.2
+      '@types/react': 19.2.14
 
-  '@types/react@19.2.2':
+  '@types/react@19.2.14':
     dependencies:
       csstype: 3.2.3
 
@@ -1828,16 +1828,16 @@ snapshots:
 
   nanoid@3.3.11: {}
 
-  next@16.1.6(react-dom@19.2.0(react@19.2.0))(react@19.2.0):
+  next@16.1.6(react-dom@19.2.0(react@19.2.4))(react@19.2.4):
     dependencies:
       '@next/env': 16.1.6
       '@swc/helpers': 0.5.15
       baseline-browser-mapping: 2.10.0
       caniuse-lite: 1.0.30001777
       postcss: 8.4.31
-      react: 19.2.0
-      react-dom: 19.2.0(react@19.2.0)
-      styled-jsx: 5.1.6(react@19.2.0)
+      react: 19.2.4
+      react-dom: 19.2.0(react@19.2.4)
+      styled-jsx: 5.1.6(react@19.2.4)
     optionalDependencies:
       '@next/swc-darwin-arm64': 16.1.6
       '@next/swc-darwin-x64': 16.1.6
@@ -1884,14 +1884,14 @@ snapshots:
 
   punycode@2.3.1: {}
 
-  react-dom@19.2.0(react@19.2.0):
+  react-dom@19.2.0(react@19.2.4):
     dependencies:
-      react: 19.2.0
+      react: 19.2.4
       scheduler: 0.27.0
 
   react-is@17.0.2: {}
 
-  react@19.2.0: {}
+  react@19.2.4: {}
 
   redent@3.0.0:
     dependencies:
@@ -1992,10 +1992,10 @@ snapshots:
     dependencies:
       js-tokens: 9.0.1
 
-  styled-jsx@5.1.6(react@19.2.0):
+  styled-jsx@5.1.6(react@19.2.4):
     dependencies:
       client-only: 0.0.1
-      react: 19.2.0
+      react: 19.2.4
 
   symbol-tree@3.2.4: {}
 
