@@ -91,7 +91,7 @@ describe("NamePicker", () => {
     await user.type(screen.getByLabelText("Enter a name"), "Alex");
     await user.click(screen.getByRole("button", { name: "Add" }));
 
-    fireEvent.click(screen.getByRole("button", { name: "Clear all" }));
+    await user.click(screen.getByRole("button", { name: "Clear all" }));
 
     expect(screen.getByText("No names yet")).toBeInTheDocument();
   });
