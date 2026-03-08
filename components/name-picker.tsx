@@ -176,6 +176,7 @@ export function NamePicker() {
                       .join(", ")})`
                   : undefined,
               }}
+              role="img"
               aria-label="Name wheel"
             >
               {segments.length ? (
