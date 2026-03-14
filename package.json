@@ -7,6 +7,11 @@
     "node": "24.x",
     "pnpm": "10.31.0"
   },
+  "pnpm": {
+    "overrides": {
+      "undici": "7.24.2"
+    }
+  },
   "scripts": {
     "preinstall": "node scripts/enforce-pnpm.cjs",
     "dev": "next dev",
