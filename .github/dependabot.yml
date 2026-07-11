@@ -24,3 +24,11 @@ updates:
       - dependency-name: "@types/node"
         update-types:
           - "version-update:semver-major"
+      # Next.js @preview cuts are ad-hoc snapshots from older canaries, then
+      # canary keeps advancing. Semver ranks "preview" > "canary", so Dependabot
+      # treats stale preview builds as upgrades (e.g. canary.83 → preview.5) and
+      # drops TypeScript 7 support (experimental.useTypeScriptCli from #95639).
+      # Stay on canary (or stable) until a preview cut includes that fix.
+      - dependency-name: "next"
+        versions:
+          - ">=16.3.0-preview.0 <16.3.0"
