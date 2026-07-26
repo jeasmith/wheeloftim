@@ -1,5 +1,12 @@
 # AGENTS.md
 
+## Agent skills
+
+### Issue tracker
+
+Issues, PRDs, and wayfinder maps live in this repo's GitHub Issues, driven via the `gh` CLI.
+See `docs/agents/issue-tracker.md`.
+
 ## Cursor Cloud specific instructions
 
 Wheel of Tim is a single **Next.js 16 (App Router) + React 19** app. It is fully
