@@ -46,3 +46,9 @@ yarn-error.log*
 *.swo
 *~
 
+
+# Claude Code
+# Agent worktrees and personal settings must never be committed. Shared
+# config under .claude/ (settings.json, hooks) is deliberately NOT ignored.
+.claude/worktrees/
+.claude/settings.local.json
